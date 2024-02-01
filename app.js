@@ -9,17 +9,15 @@ let when = [
   "while I was praying",
 ];
 
-function onload(who, action, what, when) {
-  let excuse = document.getElementById("excuse");
+let excuse = document.getElementById("excuse");
 
-  window.addEventListener("load", () => {
-    excuse.innerHTML =
-      who[Math.floor(Math.random() * who.length)] +
-      " " +
-      action[Math.floor(Math.random() * action.length)] +
-      " " +
-      what[Math.floor(Math.random() * what.length)] +
-      " " +
-      when[Math.floor(Math.random() * when.length)];
-  });
-}
+window.addEventListener("load", () => {
+  excuse.innerHTML =
+    who[Math.floor(Math.random() * who.length)] +
+    " " +
+    action[Math.floor(Math.random() * action.length)] +
+    " " +
+    what[Math.floor(Math.random() * what.length)] +
+    " " +
+    when[Math.floor(Math.random() * when.length)];
+});
